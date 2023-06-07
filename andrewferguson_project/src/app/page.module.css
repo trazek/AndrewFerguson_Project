@@ -1,0 +1,23 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+}
+
+.hero > h2 {
+  align-self: center;
+  margin-bottom: 16px;
+  font-size: 36px;
+}
+
+.inforow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main {
+  height: 100%;
+}
