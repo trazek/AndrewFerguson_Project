@@ -1,0 +1,21 @@
+.characterData {
+    border-bottom: var(--data-divider);
+    margin-bottom: 8px;
+}
+
+.characterName {
+    display: flex;
+    justify-content: space-between;
+}
+
+.characterMetaData {
+    padding: 8px;
+    background-color: #ecedee;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.characterMetaData > p {
+    padding-bottom: 4px;
+}

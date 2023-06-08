@@ -1,0 +1,22 @@
+.movieData {
+    border-bottom: var(--data-divider);
+    margin-bottom: 8px;
+}
+
+.movieMetaData {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.movieMetaData > h3 > a {
+    text-decoration: none;
+}
+
+.movieStats  {
+    padding: 8px;
+    width: fit-content;
+    background-color: #dfe2e8;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
