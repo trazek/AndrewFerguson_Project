@@ -4,9 +4,9 @@ import InfoCard from './common_ui/info-card/info-card';
 import styles from './page.module.css';
 
 export default function Welcome() {
-  const movieDesc = "Impress your friends by memorizing all the movies from the trilogies, along with memorable quotes from teh movies";
+  const movieDesc = "Impress your friends at trivia night by memorizing all the movies and quotes from each trilogy.";
   const charactersDesc = "Delve into the minds and words of your favorite characters from the Lord of the Rings trilogy."
-  const quoteDesc = "Explore a vast collection of memorable quotes from the Lord of the Rings movies";
+  const quoteDesc = "Explore a vast collection of memorable quotes from the Lord of the Rings movies.";
   return (
     <main className={styles.main} >
 

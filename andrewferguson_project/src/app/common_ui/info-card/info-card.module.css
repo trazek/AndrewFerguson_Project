@@ -1,4 +1,4 @@
-.card {
+.cardWrapper {
     --card-border-radius: 16px;
     --card-border-color: #D3D3D3;
     --card-padding: 8px;
@@ -6,13 +6,18 @@
     --card-width: 450px;
 
     --card-content-bottom-padding: 8px;
-    --link-text-hover: rgb(40, 6, 191);
-    
+    --link-text-hover: rgb(52, 43, 96);
+
+    text-decoration: none;
+}
+
+.card {
     border: 1px solid var(--card-border-color);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     color: var(--card-text-color);
     width: var(--card-width);
+    min-height: 325px;
 
     margin-right: 16px;
 
@@ -21,6 +26,7 @@
     justify-content: space-between;
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .card > h3 {
@@ -48,21 +54,24 @@
     color: inherit;
 }
 
-.card > a > span {
+.cardWrapper > article > h3 > span {
     display: inline-block;
     transition: transform 200ms;
-  }
+}
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
 
-    .card > a:hover {
+    .cardWrapper:hover > * {
         color: var(--link-text-hover);
     }
 
-    .card > a:hover > span {
-      transform: translateX(3px);
-      color: var(--link-text-hover);
+    .cardWrapper:hover > article > h3 > span {
+      transform: translateX(5px);
+    }
+
+    .cardWrapper:hover > .card {
+        box-shadow: 0 4px 16px 0 rgba(0,0,0,0.5);
     }
   }
   
