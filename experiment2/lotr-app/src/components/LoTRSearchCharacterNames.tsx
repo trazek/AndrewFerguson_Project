@@ -10,7 +10,7 @@ export default function LoTRSearchCharacterNames({
 }: {
   onInputChange: any;
 }) {
-  const DEBOUNCE_TIME = 750;
+  const DEBOUNCE_TIME = 700;
 
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -52,6 +52,7 @@ export default function LoTRSearchCharacterNames({
           id="non-floating-label"
           variant="outlined"
           size="small"
+          autoComplete="off"
           onChange={handleInputChange}
           InputProps={{
             endAdornment: (
@@ -63,7 +64,7 @@ export default function LoTRSearchCharacterNames({
         />
       </div>
       <LinearProgress
-        style={{ top: "10px", visibility: isLoading ? "visible" : "hidden" }}
+        style={{ top: "5px", visibility: isLoading ? "visible" : "hidden" }}
       />
     </>
   );

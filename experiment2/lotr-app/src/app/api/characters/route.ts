@@ -6,10 +6,11 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const name = searchParams.get("name");
 
-  const data = await fetch(
-    `${getApiUrl()}/character${!name ? "" : `?name=/${name}/i`}`,
-    getAPiHeaders()
-  );
+  const apiURL = `${getApiUrl()}/character${
+    name === "" ? "" : `?name=/${name}/i`
+  }`;
+
+  const data = await fetch(apiURL, getAPiHeaders());
 
   const characters = await data.json();
 
